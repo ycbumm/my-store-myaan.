@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub - Online Shopping Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ShopHub</h1>
+            <p class="tagline">Your Trusted Online Store</p>
+        </div>
+    </header>
+
+    <nav class="categories">
+        <div class="container">
+            <button class="category-btn active" data-category="all">All Products</button>
+            <button class="category-btn" data-category="fashion">Fashion</button>
+            <button class="category-btn" data-category="electronics">Electronics</button>
+            <button class="category-btn" data-category="home">Home</button>
+            <button class="category-btn" data-category="accessories">Accessories</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="products-grid" id="productsGrid">
+            <div class="product-card" data-category="fashion">
+                <div class="product-image">
+                    <img src="images/product1.jpg" alt="Cotton T-Shirt">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Premium Cotton T-Shirt</h3>
+                    <p class="product-price">₹499</p>
+                    <a href="https://wa.me/919023006347?text=Hi%20I%20want%20to%20buy%20Premium%20Cotton%20T-Shirt%20-%20₹499" class="buy-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="electronics">
+                <div class="product-image">
+                    < src="images/product2.jpg" alt="Wireless Earbuds">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Wireless Earbuds Pro</h3>
+                    <p class="product-price">₹1,299</p>
+                    <a href="https://wa.me/919023006347?text=Hi%20I%20want%20to%20buy%20Wireless%20Earbuds%20Pro%20-%20₹1,299" class="buy-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="home">
+                <div class="product-image">
+                    <img src="images/product3.jpg" alt="LED Table Lamp">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Modern LED Table Lamp</h3>
+                    <p class="product-price">₹799</p>
+                    <a href="https://wa.me/919023006347?text=Hi%20I%20want%20to%20buy%20Modern%20LED%20Table%20Lamp%20-%20₹799" class="buy-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accessories">
+                <div class="product-image">
+                    <img src="images/product4.jpg" alt="Leather Wallet">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Genuine Leather Wallet</h3>
+                    <p class="product-price">₹599</p>
+                    <a href="https://wa.me/919023006347?text=Hi%20I%20want%20to%20buy%20Genuine%20Leather%20Wallet%20-%20₹599" class="buy-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="fashion">
+                <div class="product-image">
+                    <img src="images/product5.jpg" alt="Denim Jeans">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Slim Fit Denim Jeans</h3>
+                    <p class="product-price">₹999</p>
+                    <a href="https://wa.me/919023006347?text=Hi%20I%20want%20to%20buy%20Slim%20Fit%20Denim%20Jeans%20-%20₹999" class="buy-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="electronics">
+                <div class="product-image">
+                    <img src="images/product6.jpg" alt="Smart Watch">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Fitness Smart Watch</h3>
+                    <p class="product-price">₹2,499</p>
+                    <a href="https://wa.me/919023006347?text=Hi%20I%20want%20to%20buy%20Fitness%20Smart%20Watch%20-%20₹2,499" class="buy-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="home">
+                <div class="product-image">
+                    <img src="images/product7.jpg" alt="Wall Clock">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Designer Wall Clock</h3>
+                    <p class="product-price">₹649</p>
+                    <a href="https://wa.me/919023006347?text=Hi%20I%20want%20to%20buy%20Designer%20Wall%20Clock%20-%20₹649" class="buy-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accessories">
+                <div class="product-image">
+                    <img src="images/product8.jpg" alt="Sunglasses">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">UV Protection Sunglasses</h3>
+                    <p class="product-price">₹899</p>
+                    <a href="https://wa.me/919023006347?text=Hi%20I%20want%20to%20buy%20UV%20Protection%20Sunglasses%20-%20₹899" class="buy-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ShopHub. All rights reserved.</p>
+            <p>Contact us on WhatsApp: +91 98765 43210</p>
+        </div>
+    </footer>
+
+    <script>
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const category = btn.getAttribute('data-category');
+
+                productCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
